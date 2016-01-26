@@ -1,0 +1,8 @@
+{
+  "commonName": "test.net",
+  "countryName": "Italy",
+  "ST": "Tuscany",
+  "localityName": "Follonica",
+  "organizationName": "test-company",
+  "OU": "test-company"
+}

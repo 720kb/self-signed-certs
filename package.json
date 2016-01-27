@@ -1,6 +1,6 @@
 {
   "name": "dev-certs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "facility for ssl certificates creation",
   "main": "index.js",
   "scripts": {

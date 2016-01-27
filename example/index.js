@@ -7,7 +7,7 @@
     , server = new Hapi.Server()
     , path = require('path')
     , publicFolder = path.resolve(__dirname, 'www')
-    , certs = require('../index')
+    , certs = require('../index').gen
     , certificates = certs({
         'commonName': 'test.net',
         'countryName': 'Italy',

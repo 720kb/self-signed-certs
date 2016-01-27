@@ -1,6 +1,6 @@
 {
   "name": "self-signed-certs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "facility for ssl certificates creation",
   "main": "index.js",
   "scripts": {

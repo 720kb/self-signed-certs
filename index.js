@@ -10,7 +10,7 @@
 
   module.exports = certificatesConfiguration => {
 
-    const gen = () => {
+    return () => {
 
       const conf = certificatesConfiguration || defaultConfigurations
         , certificate = require('./lib/certificate-creation')(pki, keys, conf)
@@ -21,10 +21,6 @@
         'key': keyPem,
         'cert': pem
       };
-    };
-
-    return {
-      gen
     };
   };
 }());

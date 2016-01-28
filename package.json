@@ -4,7 +4,10 @@
   "description": "facility for ssl certificates creation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "gulp lint",
+    "preversion": "gulp lint",
+    "version": "git add -A .",
+    "postversion": "git push && git push --tags"
   },
   "author": {
     "name": "Dario Andrei",
@@ -23,20 +26,17 @@
     "node-forge": "^0.6.38"
   },
   "devDependencies": {
-    "code": "^2.1.0",
     "eslint": "^1.10.3",
     "gulp": "^3.9.0",
-    "gulp-changed": "^1.3.0",
     "gulp-eslint": "^1.1.1",
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^2.0.0",
-    "gulp-plumber": "^1.0.1",
     "hapi": "^12.1.0",
+    "husky": "^0.10.2",
     "inert": "^3.2.0",
     "jscs": "^2.9.0",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
-    "lab": "^8.2.0",
     "require-dir": "^0.3.0"
   }
 }
